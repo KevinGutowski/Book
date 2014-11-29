@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#topbar-container {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+}
+
+#title {
+    width: 70%;
+    background-color: rgb(120,120,120);
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    float: left;
+}
+
+#title p {
+    color: white;
+    font-size: 26px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+#logo {
+    float: left;
+    width: 15%;
+    background-color: rgb(0,255,0);
+    height: 100%;
+}
+
+#search {
+    float: right;
+    width: 15%;
+    background-color: rgb(255,0,0);
+    height: 100%;
+}
+
+#sidebar-container {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background-color: black;
+    -webkit-transform: translateX(-280px);
+    transform: translateX(-280px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+
+#container {
+    margin-top: 60px;
+    position: absolute;
+    width: 100%;
+}
+
+#content {
+    width: 700px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-title {
+    font-size: 24px;
+    padding: 10px;
+}
+
+#content p {
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 40px;
+}
+
+.equation-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.equation {
+    font-size: 20px;
+    transition: .5s ease;
+    padding: 1px 0px 1px 0px;
+}
+.equation-number {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 14px;
+}
+
