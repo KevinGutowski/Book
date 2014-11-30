@@ -55,3 +55,62 @@ body {
     margin-left: auto;
     margin-top: 20px;
 }
+
+.book {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: left;
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    color: #64696a;
+}
+
+.cover {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    height: 220px;
+    background-color: white;
+        background-color: rgba(0, 128, 255, 0.2);
+}
+
+.course {
+    font-size: 14px;
+    width: 160px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.divide {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: rgba(0,0,0,.2);
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.author {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.
+
+
+
