@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#topbar-container {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(200,200,200,.4);
+}
+
+#title {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    float: left;
+    filter: blur(10px);
+}
+
+#title p {
+    color: white;
+    font-size: 26px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+#logo {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+#search {
+    float: right;
+    width: 15%;
+    height: 100%;
+}
+
+#hero {
+    height: 40%;
+    overflow: hidden
+}
+
+#library {
+    width: 100%;
+    margin-top: -61px;
+}
+
+.shelf {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
