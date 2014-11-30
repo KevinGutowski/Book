@@ -39,24 +39,99 @@ body {
     background-color: rgb(255,0,0);
     height: 100%;
 }
-
+/* --------- Sidebar --------- */
 #sidebar-container {
     position: fixed;
     width: 280px;
     height: 100%;
-    background-color: black;
     -webkit-transform: translateX(-280px);
     transform: translateX(-280px);
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    z-index: 3;
 }
 
+#profile {
+    margin-top: 80px;
+    text-align: center;
+}
 
+#profile-image {
+    width: 100px;
+    heiht: 100px;
+    border-radius: 50%;
+}
+
+#profile-name {
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toc {
+    list-style: none;
+    margin-top: 0px;
+    height: 520px;
+    overflow: scroll;
+}
+
+#intro {
+    margin-top: 0px;
+}
+
+#toc li {
+    width: 240px;
+    margin-left: -20px;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}    
+
+.toc-number {
+    float: left;
+    font-size: 20px;
+    height: 24px;
+    padding-top: 10px;
+}
+
+.toc-title {
+    font-size: 16px;
+    float: right;
+    width: 200px;
+    margin-left: 31px;
+    margin-top: -24px;
+    padding-top: 2px;
+}
+
+#options-container {
+    width: 240;
+    position: fixed;
+    height: 100px;
+    bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#options-container div {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: rgba(120,0,0,.3);
+}
+
+/* --------- Main Contents/Container --------- */
 
 #container {
     margin-top: 60px;
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 
 #content {
@@ -64,6 +139,10 @@ body {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding: 30px 50px 30px 50px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 30px;
 }
 
 .content-title {
@@ -91,8 +170,17 @@ body {
 }
 .equation-number {
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 0px;
     font-size: 14px;
 }
 
+#rightarrow {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(120,0,0,.3);
+    position: fixed;
+    bottom: 0px;
+    margin-left: 800px;
+    
+}

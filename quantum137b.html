@@ -14,47 +14,67 @@
         
         <nav id="sidebar-container">
             <div id="profile">
-                <img src="" alt="" id="profile-image">
+                <img src="assets/img/profilephoto.jpg" alt="Profile Photo" id="profile-image">
                 <div id="profile-name">Kevin Gutowski</div>
                 
             </div>
-            <ul class= "toc">
-                <li>Introduction</li>
+            <ul id= "toc">
+                <li><div class="toc-title" id = "intro">Introduction</div></li>
                 <li>
                     <div class="toc-number">1</div>
-                    <div class="toc-title">- Paricles &amp; Waves:</div>
-                    <div class="toc-subtitle">The Atomic Model</div>
+                    <div class="toc-title">Particles &amp; Waves: <em>The Atomic Model</em></div>
                 </li>
                 <li>
                     <div class="toc-number">2</div>
-                    <div class="toc-title">- The Schrödinger Equation:</div>
-                    <div class="toc-subtitle">Bound States</div>
+                    <div class="toc-title">The Schrödinger Equation: <em>Bound States</em></div>
                 </li>
                 <li>
                     <div class="toc-number">3</div>
-                    <div class="toc-title">- Simple Approximations</div>
+                    <div class="toc-title">Simple Approximations</div>
                 </li>
                 <li>
                     <div class="toc-number">5</div>
-                    <div class="toc-title">- Mathmatical Formalism</div>
+                    <div class="toc-title">Mathmatical Formalism</div>
                 </li>
                 <li>
                     <div class="toc-number">10</div>
-                    <div class="toc-title">- Spin 1/2 Particles</div>
+                    <div class="toc-title">Spin 1/2 Particles</div>
                 </li>
                 <li>
                     <div class="toc-number">11</div>
-                    <div class="toc-title">- Two Angular Momenta</div>
+                    <div class="toc-title">Two Angular Momenta</div>
                 </li>
                 <li>
                     <div class="toc-number">12</div>
-                    <div class="toc-title">- Entanglement</div>
+                    <div class="toc-title">Entanglement</div>
                 </li>
                 <li>
                     <div class="toc-number">13</div>
-                    <div class="toc-title">- Time-Independent Perturbation Theory</div>
+                    <div class="toc-title">Time-Independent Perturbation Theory</div>
+                </li>
+                <li>
+                    <div class="toc-number">14</div>
+                    <div class="toc-title">Identical Particles: <em>The Periodic Table</em></div>
+                </li>
+                <li>
+                    <div class="toc-number">15</div>
+                    <div class="toc-title">Time-Dependent Perturbation Theory</div>
+                </li>
+                <li>
+                    <div class="toc-number">16</div>
+                    <div class="toc-title">Scattering</div>
+                </li>
+                <li>
+                    <div class="toc-number">17</div>
+                    <div class="toc-title">The Dirac Equation</div>
                 </li>
             </ul>
+            
+            <div id="options-container">
+                <div id="books"></div>
+                <div id="settings"></div>
+                <div id="logout"></div>
+            </div>
         </nav>
         
         <div id="container">
@@ -63,7 +83,7 @@
                 <p>Consider a particle of mass \(m\) confined to a one-dimensional box of length \(L\). The
 potential energy is</p>
                 <div class="equation-container">
-                    <div class="equation">$$ V(x) = \left\{ \begin{array}{lr} 0 & for \: 0 < x < L \\ \infty & outside\:the\:box \end{array} \right. $$</div>
+                    <div class="equation">$$ V(x) = \left\{ \begin{array}{lr} 0 & \text{for } 0 < x < L \\ \infty & \text{outside the box} \end{array} \right. $$</div>
                 </div>
                 <p>The particle is excluded from regions in which \(V(x) = 0\). The classical analogue is a ball bouncing elastically between two rigid walls. However, since we are doing a wave mechanics, our solutions will resemble those for a guitar string tied down at \(x = 0\) and \(L\).</p>
                 <p>Inside the box, the time-independent Schrödinger equation is</p>
@@ -101,7 +121,9 @@ potential energy is</p>
             </div>
             
             -->
-            
+                <div id="leftarrow"></div>
+                <div id="rightarrow"></div>
+            </div>
         </div>
     </body>
 </html>
