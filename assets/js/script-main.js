@@ -28,4 +28,8 @@ $(document).ready(function() {
             $("#sidebar-button").removeClass("button-active");
         }
     });
+    
+    $("#books").click(function() {
+        window.location = "books.html";
+    });
 });
