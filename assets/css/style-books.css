@@ -66,6 +66,7 @@ body {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     color: #64696a;
+    perspective: 800px;
 }
 
 .cover {
@@ -74,8 +75,10 @@ body {
     margin-right: auto;
     margin-top: 15px;
     height: 220px;
-    background-color: white;
-        background-color: rgba(0, 128, 255, 0.2);
+    background-color: rgba(0, 128, 255, 0.2);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    transition: .5s ease;
 }
 
 .course {
@@ -115,7 +118,18 @@ body {
 }
 
 
-.
+./* --------- JQuery Mods --------- */
 
-
+.test {
+     width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    height: 220px;
+    background-color: rgba(0, 128, 255, 0.2);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    transition: .5s ease;
+    transform: rotateY(70deg) scale(0.9) translateZ(-50px);
+}
 
