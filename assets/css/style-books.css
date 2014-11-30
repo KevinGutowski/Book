@@ -49,11 +49,24 @@ body {
     margin-top: -61px;
 }
 
+#bookshelf {
+
+}
+
+#backdrop {
+    height: calc(100% + 40px);
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
 .shelf {
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
+    padding-top: 20px;
+    height: 100%;
+    transition: .3s ease;
 }
 
 .book {
@@ -67,6 +80,9 @@ body {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     color: #64696a;
     perspective: 800px;
+    position: relative;
+    z-index: 2;
+    transition: .3s ease;
 }
 
 .cover {
@@ -78,9 +94,22 @@ body {
     background-color: rgba(0, 128, 255, 0.2);
     transform-style: preserve-3d;
     perspective: 800px;
-    transition: .5s ease;
+    transition: .4s ease;
 }
 
+.description {
+    position: absolute;
+    top: 30px;
+    width: 200px;
+    left: 90px;
+    height: 210px;
+    transition: .3s ease;
+    display: none;
+    opacity: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
 .course {
     font-size: 14px;
     width: 160px;
@@ -89,7 +118,6 @@ body {
     margin-right: auto;
     margin-top: 4px;
     height: 35px;
-
 }
 
 .title {
@@ -120,16 +148,21 @@ body {
 
 ./* --------- JQuery Mods --------- */
 
-.test {
-     width: 170px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    height: 220px;
-    background-color: rgba(0, 128, 255, 0.2);
-    transform-style: preserve-3d;
-    perspective: 800px;
-    transition: .5s ease;
-    transform: rotateY(70deg) scale(0.9) translateZ(-50px);
+.cover-select {
+    transform: rotateY(70deg) scale(0.9) translateZ(-110px);
+    
 }
 
+.other {
+    transform: rotateY(70deg) scale(0.9) translateZ(-110px);
+}
+
+.shelf-active {
+    width: 1100px;
+    transition: .3s ease;
+}
+
+.book-active {
+    width: 300px;
+    transition: .3s ease;
+}
